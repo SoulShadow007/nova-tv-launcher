@@ -1,0 +1,10 @@
+<resources>
+    <dimen name="screen_padding_h">40dp</dimen>
+    <dimen name="screen_padding_top">26dp</dimen>
+    <dimen name="screen_padding_bottom">22dp</dimen>
+    <dimen name="chip_padding_h">14dp</dimen>
+    <dimen name="chip_padding_v">6dp</dimen>
+    <dimen name="panel_corner">22dp</dimen>
+    <dimen name="app_item_width">108dp</dimen>
+    <dimen name="app_item_height">136dp</dimen>
+</resources>

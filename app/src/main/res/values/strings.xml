@@ -1,0 +1,91 @@
+<resources>
+    <string name="app_name">Nova TV Launcher</string>
+
+    <!-- Bottom bar -->
+    <string name="nav_all_apps">Все приложения</string>
+    <string name="nav_wallpaper">Обои</string>
+    <string name="nav_files">Файлы</string>
+    <string name="nav_settings">Настройки</string>
+
+    <!-- Status -->
+    <string name="status_ram">RAM %1$d%% · своб. %2$s</string>
+    <string name="status_temp">%1$d°C</string>
+    <string name="status_temp_na">— °C</string>
+    <string name="status_net">↓ %1$s</string>
+    <string name="status_net_na">↓ —</string>
+    <string name="status_vpn_on">VPN вкл</string>
+    <string name="status_vpn_off">VPN выкл</string>
+
+    <!-- Weather -->
+    <string name="weather_format">%1$s %2$d°C · %3$s · ветер %4$d м/с</string>
+    <string name="weather_unavailable">Погода недоступна</string>
+
+    <!-- Preview -->
+    <string name="preview_recommended">Рекомендуется</string>
+    <string name="preview_continue">Продолжить просмотр</string>
+    <string name="preview_viewers">Смотрят сейчас</string>
+    <string name="preview_new">Новинки</string>
+    <string name="preview_viewers_value">%1$s человек</string>
+    <string name="preview_recommended_value">%1$d %2$s с рейтингом выше 7,0</string>
+    <string name="preview_new_value">%1$d новых %2$s на этой неделе</string>
+
+    <!-- Favorites -->
+    <string name="favorites_title">Избранное</string>
+    <string name="favorites_empty">Здесь пока пусто.\nОткройте «Все приложения» и нажмите MENU (или зажмите OK) на нужном приложении.</string>
+
+    <!-- All apps -->
+    <string name="all_apps_title">Все приложения</string>
+    <string name="all_apps_count">%1$d прил.</string>
+    <string name="all_apps_hint">OK — открыть · MENU / долгое нажатие — добавить или убрать из избранного</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Настройки</string>
+    <string name="section_theme">Тема оформления</string>
+    <string name="section_wallpaper">Обои</string>
+    <string name="section_weather">Город для погоды</string>
+    <string name="section_animations">Анимация переходов</string>
+    <string name="section_about">О приложении</string>
+    <string name="theme_nova_dark">Нова · тёмная</string>
+    <string name="theme_aurora">Аврора · фиолетовая</string>
+    <string name="theme_amber">Янтарь · ретро</string>
+    <string name="theme_crystal">Кристалл · светлая</string>
+    <string name="anim_smooth">Плавное появление</string>
+    <string name="anim_slide">Сдвиг снизу</string>
+    <string name="anim_zoom">Масштаб</string>
+    <string name="about_text">Nova TV Launcher v1.0.0\n\nБыстрый лаунчер для Android TV-приставок: избранное с предпросмотром, системные показатели, погода, видеообои, файловый менеджер и четыре темы оформления.\n\nУправление — только пультом (D-pad, OK, MENU).</string>
+
+    <!-- Wallpaper dialog -->
+    <string name="wallpaper_title">Обои</string>
+    <string name="wallpaper_pick_image">Изображение из файлов…</string>
+    <string name="wallpaper_pick_video">Видео (живые обои)…</string>
+    <string name="wallpaper_reset">Стандартные обои</string>
+    <string name="wallpaper_hint">Видео проигрывается без звука в цикле. Форматы: MP4, MKV, WEBM, AVI, MOV, TS.</string>
+    <string name="wallpaper_image_set">Обои-изображение установлены</string>
+    <string name="wallpaper_video_set">Видеообои установлены</string>
+    <string name="wallpaper_reset_done">Установлены стандартные обои</string>
+
+    <!-- Files -->
+    <string name="files_title">Файлы</string>
+    <string name="files_up">Наверх</string>
+    <string name="files_empty">Папка пуста или нет доступа к хранилищу</string>
+    <string name="files_permission_needed">Требуется разрешение на доступ к файлам</string>
+    <string name="files_no_handler">Нет приложения для открытия этого файла</string>
+    <string name="file_folder_subtitle">папка</string>
+
+    <!-- Toasts -->
+    <string name="added_to_favorites">Добавлено в избранное: %1$s</string>
+    <string name="removed_from_favorites">Убрано из избранного: %1$s</string>
+    <string name="app_launch_error">Не удалось открыть приложение</string>
+
+    <!-- Weather descriptions -->
+    <string name="wd_clear">Ясно</string>
+    <string name="wd_partly">Малооблачно</string>
+    <string name="wd_cloudy">Облачно</string>
+    <string name="wd_overcast">Пасмурно</string>
+    <string name="wd_fog">Туман</string>
+    <string name="wd_drizzle">Морось</string>
+    <string name="wd_rain">Дождь</string>
+    <string name="wd_shower">Ливень</string>
+    <string name="wd_snow">Снег</string>
+    <string name="wd_thunder">Гроза</string>
+</resources>

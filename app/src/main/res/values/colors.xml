@@ -1,0 +1,6 @@
+<resources>
+    <color name="nova_bg_dark">#FF070C16</color>
+    <color name="nova_bg_aurora">#FF16081F</color>
+    <color name="nova_bg_amber">#FF120D08</color>
+    <color name="nova_bg_crystal">#FFE7E9F2</color>
+</resources>

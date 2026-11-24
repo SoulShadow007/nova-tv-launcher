@@ -1,0 +1,12 @@
+<resources>
+    <declare-styleable name="NovaTheme">
+        <attr name="novaBackground" format="reference|color" />
+        <attr name="novaDimColor" format="color" />
+        <attr name="novaPanelColor" format="color" />
+        <attr name="novaPanelStroke" format="color" />
+        <attr name="novaChipColor" format="color" />
+        <attr name="novaAccent" format="color" />
+        <attr name="novaTextPrimary" format="color" />
+        <attr name="novaTextSecondary" format="color" />
+    </declare-styleable>
+</resources>

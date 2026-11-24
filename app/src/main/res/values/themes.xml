@@ -1,0 +1,79 @@
+<resources>
+    <!-- Base launcher theme -->
+    <style name="Theme.NovaTV" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <!-- 1. Nova Dark: deep navy glass, cyan accent -->
+    <style name="Theme.NovaTV.Dark">
+        <item name="novaBackground">@color/nova_bg_dark</item>
+        <item name="android:windowBackground">@color/nova_bg_dark</item>
+        <item name="novaDimColor">#99031220</item>
+        <item name="novaPanelColor">#E60D1526</item>
+        <item name="novaPanelStroke">#3322D3EE</item>
+        <item name="novaChipColor">#990D1526</item>
+        <item name="novaAccent">#22D3EE</item>
+        <item name="novaTextPrimary">#F1F5F9</item>
+        <item name="novaTextSecondary">#94A3B8</item>
+        <item name="colorAccent">#22D3EE</item>
+        <item name="colorPrimary">#0D1526</item>
+    </style>
+
+    <!-- 2. Aurora: violet night, pink accent -->
+    <style name="Theme.NovaTV.Aurora">
+        <item name="novaBackground">@color/nova_bg_aurora</item>
+        <item name="android:windowBackground">@color/nova_bg_aurora</item>
+        <item name="novaDimColor">#991A0A28</item>
+        <item name="novaPanelColor">#E62A1044</item>
+        <item name="novaPanelStroke">#4DE879DA</item>
+        <item name="novaChipColor">#992A1044</item>
+        <item name="novaAccent">#E879DA</item>
+        <item name="novaTextPrimary">#FDF7FF</item>
+        <item name="novaTextSecondary">#C4A6D9</item>
+        <item name="colorAccent">#E879DA</item>
+        <item name="colorPrimary">#2A1044</item>
+    </style>
+
+    <!-- 3. Amber Retro: warm CRT terminal, amber accent -->
+    <style name="Theme.NovaTV.Amber">
+        <item name="novaBackground">@color/nova_bg_amber</item>
+        <item name="android:windowBackground">@color/nova_bg_amber</item>
+        <item name="novaDimColor">#99170E05</item>
+        <item name="novaPanelColor">#E6241610</item>
+        <item name="novaPanelStroke">#66F59E0B</item>
+        <item name="novaChipColor">#99241610</item>
+        <item name="novaAccent">#F59E0B</item>
+        <item name="novaTextPrimary">#FEF3C7</item>
+        <item name="novaTextSecondary">#B9905C</item>
+        <item name="colorAccent">#F59E0B</item>
+        <item name="colorPrimary">#241610</item>
+    </style>
+
+    <!-- 4. Crystal Light: bright minimal, indigo accent -->
+    <style name="Theme.NovaTV.Crystal">
+        <item name="novaBackground">@color/nova_bg_crystal</item>
+        <item name="android:windowBackground">@color/nova_bg_crystal</item>
+        <item name="novaDimColor">#CCE7E9F2</item>
+        <item name="novaPanelColor">#F2FFFFFF</item>
+        <item name="novaPanelStroke">#334F46E5</item>
+        <item name="novaChipColor">#CCFFFFFF</item>
+        <item name="novaAccent">#4F46E5</item>
+        <item name="novaTextPrimary">#1E293B</item>
+        <item name="novaTextSecondary">#64748B</item>
+        <item name="colorAccent">#4F46E5</item>
+        <item name="colorPrimary">#4F46E5</item>
+    </style>
+
+    <!-- Fullscreen popup dialogs -->
+    <style name="NovaDialog" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@style/NovaDialogAnimation</item>
+    </style>
+
+    <style name="NovaDialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/dialog_in</item>
+        <item name="android:windowExitAnimation">@anim/dialog_out</item>
+    </style>
+</resources>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="1080dp"
+    android:height="600dp"
+    android:viewportWidth="1080"
+    android:viewportHeight="600">
+    <!-- Deep space sky -->
+    <path
+        android:fillColor="#FF0A1226"
+        android:pathData="M0,0h1080v600h-1080z" />
+    <!-- Horizon glow band -->
+    <path
+        android:fillColor="#FF0E1B33"
+        android:pathData="M0,470 C250,380 420,520 700,430 C860,380 980,430 1080,390 L1080,600 L0,600 Z" />
+    <!-- Second, lighter band -->
+    <path
+        android:fillColor="#FF13233F"
+        android:pathData="M0,540 C300,470 560,560 820,500 C940,472 1030,500 1080,480 L1080,600 L0,600 Z" />
+    <!-- Moon -->
+    <path
+        android:fillColor="#FF14284B"
+        android:pathData="M870,74 a46,46 0 1 0 0.01,0 z" />
+    <path
+        android:fillColor="#FF1E3A66"
+        android:pathData="M870,88 a32,32 0 1 0 0.01,0 z" />
+    <!-- Stars -->
+    <path
+        android:fillColor="#5522D3EE"
+        android:pathData="M120,90 l5,-5 5,5 -5,5 z M260,150 l4,-4 4,4 -4,4 z M420,70 l4,-4 4,4 -4,4 z M620,110 l5,-5 5,5 -5,5 z M180,240 l4,-4 4,4 -4,4 z M740,60 l4,-4 4,4 -4,4 z M960,190 l4,-4 4,4 -4,4 z M80,380 l4,-4 4,4 -4,4 z M540,180 l4,-4 4,4 -4,4 z M990,300 l4,-4 4,4 -4,4 z" />
+    <path
+        android:fillColor="#99E0F2FE"
+        android:pathData="M340,300 l3,-3 3,3 -3,3 z M860,250 l3,-3 3,3 -3,3 z M150,160 l3,-3 3,3 -3,3 z M680,210 l3,-3 3,3 -3,3 z" />
+</vector>

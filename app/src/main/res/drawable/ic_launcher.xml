@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Rounded square background -->
+    <path
+        android:fillColor="#FF0B1220"
+        android:pathData="M26,4 h56 a22,22 0 0 1 22,22 v56 a22,22 0 0 1 -22,22 h-56 a22,22 0 0 1 -22,-22 v-56 a22,22 0 0 1 22,-22 z" />
+    <!-- TV screen -->
+    <path
+        android:fillColor="#FF10233F"
+        android:pathData="M30,28 h48 a6,6 0 0 1 6,6 v28 a6,6 0 0 1 -6,6 h-48 a6,6 0 0 1 -6,-6 v-28 a6,6 0 0 1 6,-6 z" />
+    <!-- Nova bolt -->
+    <path
+        android:fillColor="#FF22D3EE"
+        android:pathData="M58,33 L46,53 h7 L50,66 L63,48 h-8 L59,33 Z" />
+    <!-- TV stand -->
+    <path
+        android:fillColor="#FF31465F"
+        android:pathData="M48,72 h12 v5 h-12 z" />
+</vector>

@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/novaBackground">
+
+    <!-- Live video wallpaper -->
+    <VideoView
+        android:id="@+id/wallpaper_video"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+    <!-- Static image wallpaper -->
+    <ImageView
+        android:id="@+id/wallpaper_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_wallpaper_default" />
+
+    <!-- Theme dim overlay -->
+    <View
+        android:id="@+id/wallpaper_dim"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/novaDimColor" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/screen_padding_h"
+        android:paddingTop="@dimen/screen_padding_top"
+        android:paddingEnd="@dimen/screen_padding_h"
+        android:paddingBottom="@dimen/screen_padding_bottom">
+
+        <!-- Top bar: clock + weather (left), system status (right) -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/clock_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:textColor="?attr/novaTextPrimary"
+                    android:textSize="62sp" />
+
+                <TextView
+                    android:id="@+id/date_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:textColor="?attr/novaTextSecondary"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/weather_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:textColor="?attr/novaTextSecondary"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/status_ram"
+                    style="@style/StatusChip"
+                    android:text="RAM" />
+
+                <TextView
+                    android:id="@+id/status_temp"
+                    style="@style/StatusChip"
+                    android:layout_marginStart="10dp"
+                    android:text="— °C" />
+
+                <TextView
+                    android:id="@+id/status_net"
+                    style="@style/StatusChip"
+                    android:layout_marginStart="10dp"
+                    android:text="↓ —" />
+
+                <TextView
+                    android:id="@+id/status_vpn"
+                    style="@style/StatusChip"
+                    android:layout_marginStart="10dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:text="VPN выкл" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Content preview panel area -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/preview_panel"
+                android:layout_width="460dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/bg_panel"
+                android:orientation="vertical"
+                android:padding="28dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/preview_app_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textColor="?attr/novaTextPrimary"
+                    android:textSize="32sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="?attr/novaPanelStroke" />
+
+                <LinearLayout style="@style/PreviewRow">
+
+                    <TextView
+                        style="@style/PreviewLabel"
+                        android:text="@string/preview_recommended" />
+
+                    <TextView
+                        android:id="@+id/preview_recommended"
+                        style="@style/PreviewValue" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/PreviewRow">
+
+                    <TextView
+                        style="@style/PreviewLabel"
+                        android:text="@string/preview_continue" />
+
+                    <TextView
+                        android:id="@+id/preview_continue"
+                        style="@style/PreviewValue" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/PreviewRow">
+
+                    <TextView
+                        style="@style/PreviewLabel"
+                        android:text="@string/preview_viewers" />
+
+                    <TextView
+                        android:id="@+id/preview_viewers"
+                        style="@style/PreviewValue" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/PreviewRow">
+
+                    <TextView
+                        style="@style/PreviewLabel"
+                        android:text="@string/preview_new" />
+
+                    <TextView
+                        android:id="@+id/preview_new"
+                        style="@style/PreviewValue" />
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+
+        <!-- Favorites row -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="@string/favorites_title"
+            android:textAllCaps="true"
+            android:textColor="?attr/novaTextSecondary"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="140dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/favorites_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp" />
+
+            <TextView
+                android:id="@+id/favorites_hint"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/favorites_empty"
+                android:textColor="?attr/novaTextSecondary"
+                android:textSize="16sp"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <!-- Bottom navigation bar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/btn_all_apps"
+                style="@style/NavButton">
+
+                <ImageView
+                    style="@style/NavIcon"
+                    android:contentDescription="@string/nav_all_apps"
+                    android:src="@drawable/ic_apps" />
+
+                <TextView
+                    style="@style/NavLabel"
+                    android:text="@string/nav_all_apps" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btn_wallpaper"
+                style="@style/NavButton"
+                android:layout_marginStart="14dp">
+
+                <ImageView
+                    style="@style/NavIcon"
+                    android:contentDescription="@string/nav_wallpaper"
+                    android:src="@drawable/ic_wallpaper" />
+
+                <TextView
+                    style="@style/NavLabel"
+                    android:text="@string/nav_wallpaper" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btn_files"
+                style="@style/NavButton"
+                android:layout_marginStart="14dp">
+
+                <ImageView
+                    style="@style/NavIcon"
+                    android:contentDescription="@string/nav_files"
+                    android:src="@drawable/ic_files" />
+
+                <TextView
+                    style="@style/NavLabel"
+                    android:text="@string/nav_files" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btn_settings"
+                style="@style/NavButton"
+                android:layout_marginStart="14dp">
+
+                <ImageView
+                    style="@style/NavIcon"
+                    android:contentDescription="@string/nav_settings"
+                    android:src="@drawable/ic_settings" />
+
+                <TextView
+                    style="@style/NavLabel"
+                    android:text="@string/nav_settings" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>
